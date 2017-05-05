@@ -1,0 +1,4 @@
+component:
+  host: localhost
+  port: 0909
+  dbName: simpleDbName
