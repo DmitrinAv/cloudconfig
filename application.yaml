@@ -2,21 +2,29 @@ server:
   port: 8888
 spring:
   profiles:
-    active: native
+    active: default
+#  profiles:
+#    active: native
   cloud:
     config:
       server:
         git:
           uri: https://github.com/DmitrinAv/cloudconfig.git
+#          uri: https://github.com/DmitrinAv/cloudconfig/blob/master/
+#          uri: https://github.com/DmitrinAv/cloudconfig/blob/master/config/simple.properties
         encrypt:
           enabled: false
 
 security:
   basic:
     enabled: false
-  user:
-    name: root
-    password: root
+#  user:
+#    name: root
+#    password: root
+#
+#encrypt:
+#  key: testKey
 
-encrypt:
-  key: testKey
+management:
+  security:
+    enabled: false
