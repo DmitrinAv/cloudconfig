@@ -1,4 +1,11 @@
-component:
+auth:
   host: localhost
-  port: 0000
-  dbName: simpleDbName
+  port: 8080
+  dbName: simpleAuthKey
+
+#profile:
+#  host: dbhost
+#  port: 8181
+#  user: root
+#  pass: {cipher}de515d1dc12512428fb83c2106c9a2b6ef0758b389c9a9292ddbee5c44aa6b40
+#  dbName: simpleDbName

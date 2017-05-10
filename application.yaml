@@ -1,0 +1,29 @@
+server:
+  port: 8888
+spring:
+  profiles:
+    active: default
+#  profiles:
+#    active: native
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/DmitrinAv/cloudconfig.git
+#          uri: http://sbt-dmitrin-av@stash.ca.sbrf.ru/scm/smsb/config.git
+        encrypt:
+          enabled: false
+
+security:
+  basic:
+    enabled: false
+#  user:
+#    name: root
+#    password: root
+#
+#encrypt:
+#  key: testKey
+
+management:
+  security:
+    enabled: false
